@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recharge Theme</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+ <style type="text/css">
+   body{
+  overflow-x: hidden;
+}
+
+
+.container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+
+.container .icon{
+  position: relative;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .icon .iconBx{
+  position: relative;
+  margin-left: 40px;  
+  padding: 0 5px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.07);
+
+}
+.container .icon .iconBx.active{
+  box-shadow: 10px 10px rgba(169,169,169,1);
+}
+.content{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  height: 500px;
+}
+
+.content .contentBx{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.content .contentBx.active{
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.navbar{
+  background-color: rgba(0,0,0,0.692);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1{
+  font-size: 55px;
+  font-weight: 500;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.centered3{
+  font-size: 40px;
+  margin-top: -35px;
+}
+.brand_logos{
+  list-style: none;
+ } 
+  ul.brand_logos li {
+    margin-left: 20%;
+    
+    border-radius: 3px;
+    float: left;
+    height: 60px;
+    list-style: outside none none;
+    margin: 68px;
+    padding: 16px 0;
+    
+}
+.heading{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Customer123{
+  position: absolute;
+  top: 235%;
+  left: 50%;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+}
+.widthhere{
+  width: 100%;
+}
+.jumbotron4{
+  width: 100%;
+  height: 600px;
+}
+.footerlist{
+  margin-left: -40px; 
+}
+.footerlist1{
+  margin-left: -40px; 
+}
+.steps{
+  width: 100%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+.container{
+  width: 600px;
+  margin-left: -80px;
+}
+.content{
+  width: 40%;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+.card{
+  max-width: 600px;
+}
+.widthhere{
+  width: 70%;
+  margin-left: 20%
+}
+.jumbotron4{
+  width: 90%;
+  height: 1100px;
+}
+  ul.brand_logos li {
+
+    height: 10px;
+    list-style: outside none none;
+    margin: 40px;
+    padding: 10px 0; 
+}
+.footerlist{
+  margin-left: 210px; 
+}
+.footerlist1{
+  margin-left: 140px; 
+}
+.centered1{
+  margin: -100px;
+  margin-top: 17%;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.centered3{
+  margin: -100px;
+  font-size: 25px;
+  margin-top: -35px;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.steps{
+  width: 75%;
+  margin-left: 17%
+}
+}
+
+ </style>   
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bgcolor">
+  <a class="navbar-brand" href="#" style="font-size: 30px;font-weight: 700;color:#E2E095">Global Company International</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto" style="float: right;margin-left: 60%">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#E2E095">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#E2E095">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#E2E095">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#E2E095">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#recharge" style="color:#E2E095">Recharge</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  	<div class="carousel-inner">
+    	<div class="carousel-item active">
+     	 <img class="d-block w-100" src="6.jpg" alt="First slide" style="height: 700px;">
+        <div class="centered"><h2 class="centered3" style="color: white;margin-top: 20px;">Flat Rs.200 Cash back on Recharge</h2></div>	
+      </div>
+    	<div class="carousel-item">
+     	 <img class="d-block w-100" src="sale.jpg" alt="Second slide" style="height: 700px;">
+       <div class="centered"><h2 class="centered3" style="color:#D8EDCA">Upto Rs.125 Discount & Flat 100% Money Back</h2></div>
+    	</div>
+    	<div class="carousel-item">
+      	 <img class="d-block w-100" src="1.jpg" alt="Third slide" style="height: 700px;">
+         <div class="centered"><h2 class="centered1" style="color:#D8EDCA">Flat 50% Off on DTH</h2></div>  
+    	</div>
+ 	 </div>
+</div>
+</section>
+
+<div class="jumbotron mt-4"id="recharge" style="height: 600px; background: white;">
+  <div class="container">
+    <div class="icon">
+      <div class="iconBx active" data-id="content1" style="background:#003152; color: white; width: 80px;">
+          <div class="d-block">
+            <h6 class="mt-3">Prepaid</h6>
+            <i class="fas fa-mobile-alt i"></i>
+          </div>
+      </div> 
+      <div class="iconBx" data-id="content2" style="background: #003152; color: white; width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-3">Postaid</h6>
+            <i class="fas fa-mobile-alt i"></i>
+        </div>   
+      </div>
+      <div class="iconBx" data-id="content3" style="background: #003152; color: white; width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-3">DTH</h6>
+            <i class="fas fa-tv i"></i> 
+        </div>
+      </div>
+      <div class="iconBx" data-id="content4" style="background: #003152;color: white;">
+        <div class="d-block">
+            <h6 class="mt-3">Electricity</h6>
+            <i class="far fa-lightbulb i"></i>
+        </div> 
+      </div>
+      <div class="iconBx" data-id="content5" style="background: #003152;color: white;">
+        <div class="d-block">
+            <h6 class="mt-3">Telephone</h6>
+            <i class="fas fa-phone i"></i> 
+        </div>
+      </div>
+      <div class="iconBx" data-id="content6" style="background: #003152;color: white;width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-2">Broad Band</h6>
+            <i class="fas fa-wifi i"></i>
+        </div> 
+      </div>
+      <div class="iconBx" data-id="content7" style="background: #003152;color: white;width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-3">Gas</h6>
+            <i class="fas fa-flask i"></i>
+        </div> 
+      </div>
+      <div class="iconBx" data-id="content8" style="background: #003152;color: white;width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-3">Water</h6>
+            <i class="fas fa-tint i"></i>
+        </div> 
+      </div>
+      <div class="iconBx" data-id="content9" style="background: #003152; color: white;width: 80px;">
+        <div class="d-block">
+            <h6 class="mt-3">Metro</h6>
+            <i class="fas fa-subway i"></i>
+        </div> 
+      </div>
+    </div> 
+    <div class="content">
+        <div class="contentBx active " id="content1" style="border: none;"> 
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-mobile-alt i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Mobile Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid mobile number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <div class="form-group pt-3">
+                        <label for="pay">How much to pay?</label>
+                         <input type="number" class="form-control" placeholder="Enter Amount" required="required">
+                      </div>
+                      <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content2">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                  <i class="fas fa-mobile-alt i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Mobile Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid mobile number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <div class="form-group pt-3">
+                        <label for="pay">How much to pay?</label>
+                         <input type="number" class="form-control" placeholder="Enter Amount" required="required">
+                      </div>
+                      <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content3">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-tv i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Subscriber Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Subscriber number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <div class="form-group pt-3">
+                        <label for="pay">How much to pay?</label>
+                         <input type="number" class="form-control" placeholder="Enter Amount" required="required">
+                      </div>
+                      <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content4">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-lightbulb i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Customer Account Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Account number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <button type="submit" class="btn btn-primary mt-3">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="contentBx" id="content5">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-phone i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Telephone Number(With STD Code)" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Landline number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <div class="form-group pt-3">
+                        <label for="pay">How much to pay?</label>
+                         <input type="number" class="form-control" placeholder="Enter Amount" required="required">
+                      </div>
+                      <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="contentBx" id="content6">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-wifi i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Customer Account Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <div class="form-group pt-3">
+                        <label for="pay">How much to pay?</label>
+                         <input type="number" class="form-control" placeholder="Enter Amount" required="required">
+                      </div>
+                      <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-3">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="contentBx" id="content7">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-flask i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Customer Account Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Account number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Gas Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <button type="submit" class="btn btn-primary mt-3">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="contentBx" id="content8">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-tint i" style="font-size: 70px; margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Customer Account Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Account number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Water Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <button type="submit" class="btn btn-primary mt-3">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="contentBx" id="content9">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mt-4">
+                <div class="text"> 
+                    <i class="fas fa-subway i" style="font-size: 70px;margin-left: 40%"></i>
+                    <form>
+                      <div class="form-group pt-3">
+                         <input type="number" class="form-control" placeholder="Enter Customer Account Number" required="required">
+                         <small id="emailHelp" class="form-text text-muted">Please enter a valid Account number. Thats what we wanted!</small>
+                      </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Select Operator</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <button type="submit" class="btn btn-primary mt-3">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                
+    </div>
+  </div>
+</div>
+
+<section>
+  <img src="Customer.jpg" height="700px" width="100%">
+  <div class="Customer123">
+    <div class="text-center">
+    <h2 style="color:white ; font-size: 35px; font-weight: 600">24/7 Customer Service Support</h2>
+      <p style="color:#D04545;font-size: 21px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <button type="submit" class="btn btn-primary mt-3">Support</button>
+  </div>
+  </div>
+</section>
+
+<section>
+<div class="container"> 
+ <div class="card text-center steps" style="border: none;">
+  <div class="card-header">
+    Get your electricity recharge done faster just in few steps!
+  </div>
+  <div class="card-body shadow p-3 mb-5 bg-white rounded" style="text-align: left;">
+    <p>How to pay electricity bill?</p>
+    <p>1. Go to electricity bill payment page on our website. <a href="#recharge">Click here</a> to recharge</p>
+    <p>2. Select your Operator</p>
+    <p>3. Enter your consumer number</p>
+    <p>4. Click on proceed, you will be redirected to paymet page</p>
+    <p>5. Pay your bill through debit card, credit card, net banking or our wallet and you are done.</p>
+  </div>
+  </div>
+</div> 
+<div class="container"> 
+ <div class="card text-center steps" style="border: none;">
+  <div class="card-header">
+    Get your mobile recharge done faster just in few steps!
+  </div>
+  <div class="card-body shadow p-3 mb-5 bg-white rounded" style="text-align: left;">
+    <p>How to pay Mobile bill?(Postpaid and Prepaid)</p>
+    <p>1. Go to Mobile bill payment page on our website. <a href="#recharge">Click here</a> to recharge</p>
+    <p>2. Enter Your mobile number</p>
+    <p>3. Select your Operator</p>
+    <p>4. Enter amount to pay</p>
+    <p>4. Click on proceed, you will be redirected to paymet page</p>
+    <p>5. Pay your bill through debit card, credit card, net banking or our wallet and you are done.</p>
+  </div>
+  </div>
+</div>
+<div class="container"> 
+ <div class="card text-center steps" style="border: none;">
+  <div class="card-header">
+    Get your DTH recharge done faster just in few steps!
+  </div>
+  <div class="card-body shadow p-3 mb-5 bg-white rounded" style="text-align: left;">
+    <p>How to pay DTH bill?</p>
+    <p>1. Go to electricity bill payment page on our website. <a href="#recharge">Click here</a> to recharge</p>
+    <p>2. Enter Your subscriber number</p>
+    <p>3. Select your Operator</p>
+    <p>4. Enter amount to pay</p>
+    <p>4. Click on proceed, you will be redirected to paymet page</p>
+    <p>5. Pay your bill through debit card, credit card, net banking or our wallet and you are done.</p>
+  </div>
+  </div>
+</div>     
+</section>
+
+<div class="jumbotron jumbotron4" style="background: white;">
+<section class="partner">
+  <div class="heading">
+    <h1 style="color: #009988">We are accepted at</h1>
+  </div>
+  <ul class="brand_logos">
+    <li><span><img src="lg.png"></span></li>
+    <li><span><img src="lg1.png"></span></li>
+    <li><span><img src="lg2.png"></span></li>
+    <li><span><img src="lg3.png"></span></li>
+    <li><span><img src="lg4.png"></span></li>
+  </ul>
+  <ul class="brand_logos">
+    <li><span><img src="lg5.png"></span></li>
+    <li><span><img src="lg6.png"></span></li>
+    <li><span><img src="lg7.png"></span></li>
+    <li><span><img src="lg9.png"></span></li>
+  </ul>
+</section>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark">
+  <div class="container text-center text-md-left">
+    <div class="row">
+       <div class="col-md-3 mx-auto" style="color: gray;margin-top: 12%">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">COMPANY</h5>
+        <div class="row footerlist">
+        <ul class="list" style="list-style: none;float: left;">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Recharge</li>
+          <li>Login</li>
+          <li>Register</li>
+        </ul>
+        </div>
+     </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+        <div class="col-md-3 mx-auto" style="margin-top: 12%;">
+           <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">Mobile Recharges</h5>
+            <div class="row footerlist">
+                <ul class="list" style="list-style: none;">
+                   <li><a href="#" style="color: gray">Home</a></li>
+                    <li><a href="#" style="color: gray">Feature</a></li>
+                    <li><a href="#" style="color: gray">Services</a></li>
+                    <li><a href="#" style="color: gray">Portfolio</a></li>
+                </ul>
+            </div>      
+        </div>
+
+      <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto" style="margin-top: 12%;">
+         <h5 class="font-weight-bold text-uppercase mt-3 mb-4"style="color: white;">DTH RECHARGES</h5>
+          <div class="row footerlist1">
+                <ul class="list" style="list-style: none;">
+                   <li><a href="#" style="color: gray">Airtel Digital TV Recharges</a></li>
+                    <li><a href="#" style="color: gray">Dish Tv Recharges</a></li>
+                    <li><a href="#" style="color: gray">Tata sky Recharges</a></li>
+                    <li><a href="#" style="color: gray">Reliance Digital TV Recharges</a></li>
+                    <li><a href="#" style="color: gray">Sun Direct Recharges</a></li>
+                    <li><a href="#" style="color: gray">Videocon D2H Recharges</a></li>
+                </ul>
+            </div>  
+          </div>  
+
+      <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto"style="margin-top: 12%;">
+           <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">PAYMENT OPTIONS</h5>
+            <div class="row footerlist1">
+                <ul class="list" style="list-style: none;">
+                   <li><a href="#" style="color: gray">Credit cards</a></li>
+                    <li><a href="#" style="color: gray">Debit cards</a></li>
+                    <li><a href="#" style="color: gray">Any Visa Debit card (VBV)</a></li>
+                    <li><a href="#" style="color: gray">Direct Bank Debits</a></li>
+                    <li><a href="#" style="color: gray">Cash cards</a></li>
+                </ul>
+            </div>
+        </div>
+      <div class="container">
+        <hr style="background: white;">
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: white;margin-left: 45%">© 2020 Copyright:
+      </div>
+     <!-- Copyright -->
+  </div>
+ </div>
+</footer>
+<!-- Footer -->
+
+<script type="text/javascript">
+  var iconBx = document.querySelectorAll('.iconBx');
+  var contentBx =   document.querySelectorAll('.contentBx');
+
+  for (var i = 0; i<iconBx.length; i++) {
+      iconBx[i].addEventListener('click',function(){
+        for (var i = 0; i < contentBx.length; i++) {
+          contentBx[i].className= 'contentBx';
+        }
+        document.getElementById(this.dataset.id).className = 'contentBx active';
+
+        for (var i = 0; i<iconBx.length; i++){
+            iconBx[i].className='iconBx';
+        }
+        this.className= 'iconBx active'
+    });
+  };
+
+</script>
+
+</body>
+</html>

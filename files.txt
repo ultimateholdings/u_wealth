@@ -1,0 +1,260 @@
+diff --git a/application/views/admin/defaultNew/header.php b/application/views/admin/defaultNew/header.php
+index 013b9bb..db1842f 100644
+--- a/application/views/admin/defaultNew/header.php
++++ b/application/views/admin/defaultNew/header.php
+@@ -156,7 +156,7 @@ endforeach;
+                 </a>
+                </li>
+                <li>
+-                <a href="<?php echo site_url('setting/profile') ?>">
++                <a href="<?php echo site_url('admin/profile') ?>">
+                   <i class="fa fa-user"></i> My Profile </a>
+                 </a>
+                </li>
+diff --git a/application/views/admin/defaultNew/kpi.php b/application/views/admin/defaultNew/kpi.php
+index c67044c..52b5ff5 100644
+--- a/application/views/admin/defaultNew/kpi.php
++++ b/application/views/admin/defaultNew/kpi.php
+@@ -142,7 +142,29 @@
+                    </div>
+             </div>
+       </div>
+-   
++   <div class="col-lg-4 col-md-6 col-sm-6">
++              <div class="layers-body card-income-2">
++                   <div class="row align-items-center">
++                          <div class="col-lg-5">
++                              <div class="layer-thumb text-center">
++                                  <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
++                               </div>
++                          </div>
++                          <div class="col-lg-7">
++                                 <div class="layer-content">
++                                    <h4 class="total-gmlm">
++                                       <span class="total-gmlm Single first">Member Wallet</span>
++                                    </h4>
++                                    <h1 class="total-gmlm Single">
++                                   <span class="total-gmlm Single first" data-count="31">    
++                                    <?php echo config_item('currency') . round($wallet_balance,0); ?>
++                                   </span>
++                                    </h1>
++                                 </div>
++                          </div>
++                   </div>
++              </div>
++           </div>
+     </div>   
+ <?php } else { ?>
+     <?php if(config_item('leg')=='2') { ?>
+@@ -558,6 +580,29 @@
+                    </div>
+               </div>
+           </div>
++          <div class="col-lg-4 col-md-6 col-sm-6">
++              <div class="layers-body card-income-2">
++                   <div class="row align-items-center">
++                          <div class="col-lg-5">
++                              <div class="layer-thumb text-center">
++                                  <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
++                               </div>
++                          </div>
++                          <div class="col-lg-7">
++                                 <div class="layer-content">
++                                    <h4 class="total-gmlm">
++                                       <span class="total-gmlm Single first">Member Wallet</span>
++                                    </h4>
++                                    <h1 class="total-gmlm Single">
++                                   <span class="total-gmlm Single first" data-count="31">    
++                                    <?php echo config_item('currency') . round($wallet_balance,0); ?>
++                                   </span>
++                                    </h1>
++                                 </div>
++                          </div>
++                   </div>
++              </div>
++           </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="layers-body card-referel-2">
+                    <div class="row align-items-center">
+@@ -741,6 +786,29 @@
+                    </div>
+               </div>
+            </div>
++           <div class="col-lg-4 col-md-6 col-sm-6">
++              <div class="layers-body card-income-2">
++                   <div class="row align-items-center">
++                          <div class="col-lg-5">
++                              <div class="layer-thumb text-center">
++                                  <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
++                               </div>
++                          </div>
++                          <div class="col-lg-7">
++                                 <div class="layer-content">
++                                    <h4 class="total-gmlm">
++                                       <span class="total-gmlm Single first">Member Wallet</span>
++                                    </h4>
++                                    <h1 class="total-gmlm Single">
++                                   <span class="total-gmlm Single first" data-count="31">    
++                                    <?php echo config_item('currency') . round($wallet_balance,0); ?>
++                                   </span>
++                                    </h1>
++                                 </div>
++                          </div>
++                   </div>
++              </div>
++           </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="layers-body card-referel-1">
+                    <div class="row align-items-center">
+diff --git a/application/views/admin/stack/index.php b/application/views/admin/stack/index.php
+index dbdeefe..ca17084 100644
+--- a/application/views/admin/stack/index.php
++++ b/application/views/admin/stack/index.php
+@@ -127,7 +127,7 @@
+           <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block"><?php if(config_item('footer_name') != '') { ?>
+                   &copy; <?php echo date('Y') ?> All Rights Reserved by <?php echo config_item('footer_name') ?>
+           <?php } else { ?>
+-          &copy; <?php echo "&copy;".date('Y')." All Rights Reserved | Powered by <a href='https://www.globalmlmsolution.com' alt='_blank' style='color: blue;'> Global MLM Software </a>"; ?> <?php } ?></span></p>
++          &copy; <?php echo date('Y')." All Rights Reserved | Powered by <a href='https://www.globalmlmsolution.com' alt='_blank' style='color: blue;'> Global MLM Software </a>"; ?> <?php } ?></span></p>
+       </footer>
+       <!-- END: Footer-->
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+diff --git a/application/views/member/default/base.php b/application/views/member/default/base.php
+index 6658130..45a126a 100644
+--- a/application/views/member/default/base.php
++++ b/application/views/member/default/base.php
+@@ -69,7 +69,7 @@ $payout = $member_data['payout'];
+ <!--main content end-->
+ <!--footer start-->
+ <div style="text-align: center; margin-bottom: 20px;">
+-<?php echo $member_data->footer; ?>
++<?php echo $member_data['footer']; ?>
+ </div>
+ 
+ <?php include 'includes_bottom.php';?>
+diff --git a/application/views/member/default/dashboard_bottom.php b/application/views/member/default/dashboard_bottom.php
+index 3d5167c..940497f 100644
+--- a/application/views/member/default/dashboard_bottom.php
++++ b/application/views/member/default/dashboard_bottom.php
+@@ -199,9 +199,9 @@ $plans = $this->db->get()->result_array();
+         <div class="content">
+             <div class="container-fluid">
+                 <div class="row">
+-                    <div class="col-md-12" style="height:5px;">
+-                        <div class="card" >
+-                            <div class="card-header card-header-primary" style="background: green;">
++                    <div class="col-md-12">
++                        <div class="card"  >
++                           <div class="card-header card-header-primary" style="background: green;">
+                                 <h4 class="card-title" style="color:white;">Reward Achievers</h4>
+                                 <p class="card-category" style="color:white; font-size: 12px;"> Latest Reward Achievers</p>
+                             </div>
+@@ -241,6 +241,7 @@ $plans = $this->db->get()->result_array();
+ <?php } ?>
+ 
+ 
++
+ <?php
+ if(config_item('enable_club_income')=='Yes'){ ?>
+   <div class="col-md-12 col-sm-12" id='club_income'>
+diff --git a/application/views/member/defaultNew/kpi.php b/application/views/member/defaultNew/kpi.php
+index f61ae34..3867ab8 100644
+--- a/application/views/member/defaultNew/kpi.php
++++ b/application/views/member/defaultNew/kpi.php
+@@ -352,7 +352,7 @@
+                       <div class="col-lg-7">
+                           <div class="layer-content">
+                                  <h4 class="total-gmlm">
+-                                    <span class="total-gmlm Single first">Pending Payout</span>
++                                    <span class="total-gmlm Single first">Pending  Payout</span>
+                                   </h4>
+                                   <h1 class="total-gmlm Single">
+                                     <span class="total-gmlm Single first" data-count="31">           
+@@ -364,28 +364,6 @@
+                    </div>
+               </div>
+         </div>
+-        <div class="col-lg-4 col-md-6 col-sm-6">
+-              <div class="layers-body card-paid-2">
+-                 <div class="row align-items-center">
+-                      <div class="col-lg-5">
+-                            <div class="layer-thumb text-center">
+-                                <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
+-                            </div>
+-                      </div>
+-                      <div class="col-lg-7">
+-                          <div class="layer-content">
+-                                 <h4 class="total-gmlm">
+-                                    <span class="total-gmlm Single first">Matching Income</span>
+-                                  </h4>
+-                                  <h1 class="total-gmlm Single">
+-                                    <span class="total-gmlm Single first" data-count="31">           
+-                                     <?php echo config_item('currency') . $member_data['matching_income']; ?></span>
+-                                 </h1>
+-                          </div>
+-                      </div>
+-                   </div>
+-              </div>
+-        </div>
+    
+ <?php } else { ?>
+ <?php if(config_item('width') == '1') { ?>
+@@ -725,28 +703,6 @@
+                    </div>
+               </div>
+         </div>
+-        <div class="col-lg-4 col-md-6 col-sm-6">
+-              <div class="layers-body card-paid-2">
+-                 <div class="row align-items-center">
+-                      <div class="col-lg-5">
+-                            <div class="layer-thumb text-center">
+-                                <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
+-                            </div>
+-                      </div>
+-                      <div class="col-lg-7">
+-                          <div class="layer-content">
+-                                 <h4 class="total-gmlm">
+-                                    <span class="total-gmlm Single first">Matching Income</span>
+-                                  </h4>
+-                                  <h1 class="total-gmlm Single">
+-                                    <span class="total-gmlm Single first" data-count="31">           
+-                                     <?php echo config_item('currency') . $member_data['matching_income']; ?></span>
+-                                 </h1>
+-                          </div>
+-                      </div>
+-                   </div>
+-              </div>
+-        </div>
+       
+     <?php } ?>
+ <?php } ?></div>
+@@ -797,7 +753,28 @@
+                    </div>
+               </div>
+         </div>
+-         
++         <div class="col-lg-4 col-md-6 col-sm-6">
++              <div class="layers-body card-paid-2">
++                 <div class="row align-items-center">
++                      <div class="col-lg-5">
++                            <div class="layer-thumb text-center">
++                                <img src="<?php echo site_url('uploads/site_img/dash3.png') ?>" alt="" class="img-fluid">
++                            </div>
++                      </div>
++                      <div class="col-lg-7">
++                          <div class="layer-content">
++                                 <h4 class="total-gmlm">
++                                    <span class="total-gmlm Single first">Matching Income</span>
++                                  </h4>
++                                  <h1 class="total-gmlm Single">
++                                    <span class="total-gmlm Single first" data-count="31">           
++                                     <?php echo config_item('currency') . $member_data['matching_income']; ?></span>
++                                 </h1>
++                          </div>
++                      </div>
++                   </div>
++              </div>
++        </div>
+            
+         <?php } ?>
+         <?php if($member_data['payout']->repurchase_deduct>0){ ?>

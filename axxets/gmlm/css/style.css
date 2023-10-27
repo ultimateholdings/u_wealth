@@ -1,0 +1,358 @@
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+ color: #fff;   
+}
+
+h1, .h1 {
+    font-size: 3.3125rem;
+    line-height: 1.15em;
+    color: #ffffff;
+}
+
+h4, .h4 {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    font-weight: 100; 
+}
+
+/* Style components for contacts sections */
+
+.contacts {
+    /*background-color: cornflowerblue;*/
+    background-color: rgba(0,0,0,.7); 
+    
+}
+
+.list-unstyled {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+}
+
+.contact li {
+	float: left;
+}
+
+ .social li {
+	float: right;
+}
+
+.list-unstyled li a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 400;
+}
+
+.contacts .list-unstyled a {
+    color: #ffffff;
+    font-size: .9em;
+}
+
+#navbarNav a {
+    font-size: 14px;
+}
+
+/* End of Style components for contacts sections */
+
+/* Style for header section */
+
+header {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/profile_city.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+    /*background:rgb(0,0,0,.1);*/
+    margin-top: 35px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:not(.btn) .material-icons {
+  margin-top: -10px;
+  top: 5px;
+  position: relative;
+  margin-right: 3px;
+}
+
+
+.fixed-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar .navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+    padding-top: 25px;
+    color: #fff;
+
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  margin-top: 0px;  
+  color: black;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+    border-color: floralwhite;
+}
+
+.navbar-toggler-icon {
+    position: relative;
+    width: 22px;
+    height: 2px;
+    vertical-align: middle;
+    outline: 0;
+    display: block;
+    border-radius: 1px;
+    background-color: #ffffff;
+    margin-top: 3px; 
+    margin-bottom: 3px; 
+}
+
+.page-header {
+    background-color: transparent !important;
+    box-shadow: none;
+    color: #fff; 
+    position: relative;
+    top: 25%;
+}
+
+.title {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    color: #ffc107;
+}
+
+.drop-down a {
+    color: black;
+}
+
+/* End of style for header section */
+
+.main {
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+}
+
+.section {
+    padding: 70px 0;
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+}
+
+.main-raised {
+    margin: -60px 30px 30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Business Plans */
+h2.title {
+    margin-bottom: 1rem;
+}
+
+
+.info {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 70px 0 30px;
+}
+
+.info .info-title {
+    color: #3C4858;
+    margin: 1.75rem 0 0.875rem;
+}
+
+body > div > div > div > div.features a {
+    position: relative;
+    color: #08b248;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+}
+
+
+
+/* Key features */
+
+.key-features {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/background10.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+
+
+
+
+
+/* End of key features section */
+
+/* Footer Section */
+
+footer {
+  padding: 40px;
+  color: #fff;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/background7.jpg);
+  background-size: cover;
+  
+}
+
+.blog-block {
+    color: darkgrey;
+}
+
+@media only screen and (max-width: 769px) {
+.social {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+.social li a {
+  padding: 10px;
+  margin: 0px 6px 0px 6px;
+  color: #007bff;
+}
+
+.page-header h3 {
+    font-size: larger;
+}
+
+}
+
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+
+
+div.box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+    transition: all .3s ease-in-out;
+}
+
+div.icon {
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 32px);
+}
+
+h4.title a {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: black;
+}
+
+p.description {
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+div.icon i {
+    font-size: 64px;
+    line-height: 1;
+    transition: .5s;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.wrapper-footer .social-media a:hover .eps-icon, .wrapper-footer .social-media a:hover .eps-icons, .wrapper-footer .social-media a:focus .eps-icon, .wrapper-footer .social-media a:focus .eps-icons, .wrapper-footer .social-media a:active .eps-icon, .wrapper-footer .social-media a:active .eps-icons {
+    color: #fff;
+}
+.eps-icon {
+    font-family: 'epixel-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.social-media a:hover, .social-media a:focus, .social-media a:active {
+    background-color: #ea2e26;
+}
+
+.social-media a, .social-media a:link, .social-media a:visited {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2.2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+#block-block-7 > div > div.social-media.mb-5 > ul > li > a > span {
+  color: black;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.social-media a .eps-icon, .social-media a:link .eps-icon, .social-media a:visited .eps-icon {
+    color: #333;
+    line-height: 2.3rem;
+}
+
+@media (max-width: 991px) {
+  .social li  a  {
+    font-size: 20px !important;
+  }
+  nav {
+    margin-top: : 10px;
+  }
+  #demo_plant {
+    display: none;
+  }
+  form.contact-form {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+

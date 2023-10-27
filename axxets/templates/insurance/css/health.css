@@ -1,0 +1,74 @@
+ .footer{
+    background-color:#3a70b3;height:80px;
+    color: white;
+  }
+  .list{
+    color: white;
+      font-size:medium;
+  }
+  .main{
+  		padding-top: 110px;
+  		padding-bottom: 200px;
+  	}
+  	.in{
+ 		padding-top: 5px;
+ 		padding-bottom: 5px;
+ 	}
+ .db{
+ 	font-size: 14px;
+ }
+ .content{
+ 	padding-top: 20px;
+ }
+ label{
+ 	color: #126185;
+ }
+ span{
+ 	color: #126185;
+ }
+ .h{
+ 	font-size: medium;
+ 	font-weight: bold;
+ }
+ .card-header{
+ 	background-color:#126185;
+ 	color: white;
+
+ }
+ @media (min-width: 768px){
+ 	.im{
+ 		padding-bottom: 15px;
+ 	}
+ }
+ .mn{
+ 	width: 260px;height: 50px;padding: 10px;
+ }
+ .heading{
+ 	padding-top: 140px;
+ 	color: #126185;
+ 	font-weight: bold;
+ }
+ .img-container{
+ 	text-align: center;
+ }
+ @media (min-width:1024px) {
+ 	.img-container{
+ 		padding-top: 70px;
+ 	}
+ }
+ .s{
+ 	background-color:#d2cecc;;
+ }
+  /*input[type="date"]:before {
+
+    content: attr(placeholder) !important;
+
+  }
+
+  input[type="date"]:focus:before,
+
+  input[type="date"]:valid:before {
+
+    content: "Date of Birth" !important;
+
+  }*/

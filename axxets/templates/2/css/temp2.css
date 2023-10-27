@@ -1,0 +1,19 @@
+.main{
+background-image:url(https://themes.promlmsoftware.com/pinnacle/wp-content/uploads/sites/7/2018/04/slider_bg_3.png);
+background-color:#25b4e9;
+   height:auto;
+   width: 100%;
+  background-position: center;
+}
+
+.btn :hover{
+	background-color: #ffcc00;
+	color: white;
+}
+
+.cntr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

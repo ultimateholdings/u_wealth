@@ -1,0 +1,6 @@
+prod_name,plan_id,vendor_id,prod_price,discount,gst,prod_desc,category,sub_category,qty
+saree,3,2090404,100,15,12,sdfghj,1,1,2
+kurti,2,2090404,200,16,12,sdfghj,1,1,1
+suit,2,2090404,130,10,10,sef,2,2,5
+bag,2,2090404,140,10,10,wdfgh,2,2,6
+sandals,3,2090404,100,10,10,"vghj,",3,3,7

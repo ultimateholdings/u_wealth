@@ -1,0 +1,46 @@
+ 
+  	.main{
+  		padding-top: 200px;
+  		padding-bottom: 200px;
+  		background-image: url("../images/carinsurancebg.jpg");
+      background-position:center center;
+  		background-size:100vw 100%;
+      background-repeat: no-repeat;
+  	}
+  	.bt{
+  		color: white;
+  		background-color: #f05a22;
+  	}
+  	.name{
+  		padding-top:100px;
+  		text-align: center;
+  		color: #126185 !important;
+  	}
+  	.sub{
+  		padding-top: 70px;
+  	}
+ 	ul{
+ 		list-style: none;
+ 	}
+ 	
+ 	.form-row{
+ 		padding: 10px;
+ 	}
+ 	/*.m{
+ 		background-color: black;
+ 	}*/
+ 	.in{
+ 		padding-top: 5px;
+ 		padding-bottom: 5px;
+ 	}
+ 	label{
+ 		color: grey;
+ 	}
+  .footer{
+    background-color:#3a70b3;height:80px;
+    color: white;
+  }
+  .list{
+    color: white;
+      font-size:medium;
+  }

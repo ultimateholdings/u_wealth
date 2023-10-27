@@ -1,0 +1,64 @@
+.main{
+  		padding-top: 110px;
+  		padding-bottom: 200px;
+  	}
+ .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+.accordion .card-header{
+    background-color: #2AA4CF;
+    color: white;
+  border-color: white;
+
+}
+ul{
+	list-style: none;
+}
+h5{
+color: #126185;
+text-align: center;
+}
+.search{
+	color: red;
+}
+.o{
+	font-weight: bold;
+	color: #126185;
+}
+.acin{
+	color: #126185;
+	font-weight: bold;
+}
+.con{
+	padding-left: 65px;
+	color: black;
+	font-weight: bold;
+}
+label{
+	font-size: small;
+	margin-top: 2px;
+}
+table{
+	font-size: small;
+}
+.card-body{
+	padding: 0px;
+	font-size:small;
+}
+.table td{
+	padding: 0.1rem;
+}
+.sub{
+	color: red;
+}	
+.bn{
+	padding-top: 25px;
+}
+.offset-0{
+	color: red;
+}

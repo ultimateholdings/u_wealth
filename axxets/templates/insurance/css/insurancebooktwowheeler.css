@@ -1,0 +1,264 @@
+.main{
+  		padding-top: 200px;
+  		padding-bottom: 200px;
+  	
+  }
+  .content{
+  	box-shadow:10px 10px 28px 10px rgba(0,0,0,0.75);
+    background: #fff;
+    padding-bottom: 100px;
+
+  }
+  .heading{
+  	padding-top:5px;
+  	padding-bottom: 5px;
+  	text-align: center;
+  	background-color:  rgb(10, 148, 228);
+  	color: white;
+  	width: 100%;
+  	margin-left: 0px;
+  }
+  .data ul li {
+    color:black;
+  }
+  .go{
+  	color: white;
+  	text-decoration: none;
+  }
+  .r{
+  	float: right;
+  	font-size: medium;
+  }
+  .top{
+  	font-size: medium;
+  	padding-top: 15px;
+  	padding-bottom: 8px;
+  	border-bottom: 1px solid #d7d7d7;
+  }
+  .name{
+  	color: rgb(10, 148, 228);
+  	font-weight: bold;
+  	font-size: 25px;
+  }
+  .fa-rupee{
+  	color: rgb(10, 148, 228);
+  	font-weight: bold;
+  	font-size: large;
+  }
+  .maincon{
+  	padding-left: 20px;
+  	padding-right: 15px;
+  }
+  ul{
+  	list-style: none;
+  	font-size: medium;
+  }
+  .des{
+  	float: right;
+  }
+  #sh{
+  	font-size: 25px;
+  	color: rgb(10, 148, 228);
+  	font-weight: bold;
+  	padding-bottom: 5px;
+  	border-bottom: 1px solid #d7d7d7;;
+
+  }
+  .notify{
+  	color: red;
+  	font-size: medium;
+  	padding-top: 10px;
+  }
+  body{
+    background: url(https://resources.ibe4all.com/BrokerAssist/health-images/bgnew.jpg) no-repeat fixed center center / cover !important;
+}
+
+.heightarrow {
+    background: #f8f8f8 none repeat scroll 0 0;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    min-height: 66px;
+    padding: 0px;
+    border-top: 1px solid #fcf5f5;
+    border-bottom: 1px solid #fcf5f5;
+    padding-bottom: 0px;
+}
+#p1{
+    margin-left: 35px;
+    margin-bottom: -42px;
+    padding: 5px;
+    background-position: 49px 6px;
+    background-repeat: no-repeat;
+}
+.cls {
+    height: 92px;
+    text-align: center;
+    width: 226px;
+}
+.arrowtext {
+    line-height: 55px;
+    color: #52b164 !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    position: absolute;
+    left: -38px;
+    top: 29px;
+    font-size: 11px !important;
+    width: 100%;
+}
+.darrow::after {
+    /* border-bottom: 25px solid transparent; */
+    /* border-right: 25px solid transparent; */
+    /* border-top: 30px solid transparent; */
+    content: "----------------";
+    display: block;
+    height: 0;
+    left: 74px;
+    margin-top:-40px;
+    position: initial;
+    margin-left: 85px;
+    top: 59%;
+    width: 100%;
+    color: green;
+
+}
+.down-arrow {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    background-position: 49px 6px !important;
+}
+#spn1{
+  text-align: center;
+}
+select,input[type=text],input[type=number],input[type=email],input[type=date]  { 
+  font-size: 18px;
+  /*padding: 10px 10px 10px 5px;*/
+  -webkit-appearance: none;
+  display: block;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus { outline: none; }
+
+select{
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+label {
+  color: #999; 
+  font-size: 18px;
+  font-weight: normal;
+
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+
+input:focus ~ label, input.used ~ label {
+  top: -20px;
+  transform: scale(.75); left: -2px;
+  color: #4a89dc;
+}
+
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #4a89dc; 
+  transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+.group { 
+  position: relative; 
+  margin-bottom: 45px; 
+}
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+@keyframes inputHighlighter {
+  from { background: #4a89dc; }
+  to  { width: 0; background: transparent; }
+}
+.addon-section{
+  padding-bottom: 75px;
+}
+.mainform{
+  padding-top: 30px;
+}
+.fname{
+  font-size: 15px;
+  color: red;
+}
+.button{
+  text-align: center;
+}
+.details2{
+  padding-top: 60px;
+}
+.cname{
+  font-size: large;
+  color: rgb(10, 148, 228);
+}
+.cb{
+  text-decoration: none;
+}
+.pname{
+  font-size: large;
+  color: rgb(10, 148, 228);
+}
+.man{
+  font-size: small;
+  color: red;
+}
+#continueb{
+  float: right;
+}
+#previousb{
+  float-left;
+
+}
+.otherdetails,.vd,.privacy,.rd{
+  border-top:1px solid #d7d7d7;
+}

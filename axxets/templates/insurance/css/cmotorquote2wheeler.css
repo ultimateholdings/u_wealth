@@ -1,0 +1,81 @@
+
+.main{
+  		padding-top: 110px;
+  	}
+  	.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+    .accordion .card-header{
+        background-color: #2AA4CF;
+        color: white;
+      border-color: white;
+     
+    
+    }
+ul{
+  list-style: none;
+}
+.search{
+  color: red;
+}
+.fa-car{
+  color: #1EDD8E;
+}
+.panel-body{
+  padding: 10px;
+}
+
+.modal-footer{
+  color: red;
+  padding-right: 50px;
+}
+.mainmodal span{
+    float: right;
+}
+.mainmodal p{
+    font-weight: bold;
+    font-size: large;
+}
+.total{
+    color: red;
+}
+.mainmodal li{
+    color: #126185;
+}
+.mainf span{
+    padding-left: 5px;
+    padding-right: 15px;
+    color:  rgb(18, 97, 133);
+    font-weight: bold;
+}
+.booking_2{
+    margin-top: 20px;
+}
+/*.rd2{
+margin-top: 20px;
+}*/
+.add{
+    display: block;
+}
+.addOneses{
+    opacity: 1;
+}
+.aid{
+    float: left;
+    font-weight: bold;
+    color: #106a9e;
+}
+.anc{
+    float: right;
+    font-weight: bold;
+    color: #106a9e;
+}
+.modal-header{
+    background-color: #acdff2;
+     color: #106a9e;
+}
